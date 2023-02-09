@@ -1,0 +1,96 @@
+@import url('https://fonts.cdnfonts.com/css/monument-extended');
+
+
+.navigation{
+    display: flex;
+}
+
+.navigation li{
+    list-style: none;
+    padding: 16px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: black;
+}
+
+.container h1{
+    font-family: 'Monument Extended', 
+    sans-serif;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+input[type=text]{
+    width: 50%;
+    padding: 15px 30px;
+    border: 1px solid black;
+    box-shadow: 1.5px 1.5px 0;
+    font-size: 20px;
+}
+
+.container label{
+    margin-top: 40px;
+    font-family: 'Monument Extended', sans-serif;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.toolbar{
+    width: 720px;
+    border: 2px solid black;
+    
+}
+.textbox{
+    width: 720px;
+    height: 182px;
+    border: 1px solid black;
+    border-top: none;
+    
+}
+
+.editorText{
+    height: 160px;
+    width: 50%;
+}
+
+.dropdown{
+    width: 40%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+}
+
+.item select{
+    padding:20px;
+    padding-right: 70px;
+    appearance: none;
+    background-image: url('../../../assets/dropDown.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center;
+    background-size: 10px;
+}
+
+.dropImage{
+    height: 206px;
+    width: 40%;
+    border: 1px solid black;
+
+}
+
+.texts{
+    text-align: center;
+    transform: translateY(230%);
+    
+}

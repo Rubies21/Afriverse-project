@@ -1,0 +1,27 @@
+footer{
+    padding: 47px 98px 47px 98px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #1E1E1E;
+}
+
+.buttons{
+    display: flex;
+}
+
+.action{
+    background: #FFB700;
+    border: 2px solid #1F1F1F;
+    padding: 21px 53px 21px 53px;
+    font-weight: 500;
+    font-size: 22px;
+    
+}
+
+.back{
+    border: 2px solid #1F1F1F;
+    padding: 21px 92px 21px 92px;
+    font-weight: 500;
+    font-size: 22px;
+}

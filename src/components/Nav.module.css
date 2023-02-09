@@ -1,0 +1,41 @@
+.container{
+    /* background: #EAF7FA; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 96px 20px 96px;
+    border-bottom: 1px solid black;
+}
+.container ul{
+    display: flex;
+}
+
+.container li{
+    list-style: none;
+    padding-left: 20px;
+}
+.container a{
+    text-decoration: none;
+    color: black;
+}
+
+.currentLink{
+    font-weight:700;
+}
+.container button{
+    /* padding: 15px 50px 15px 50px; */
+    width: 40%;
+    background: #EAF7FA;
+    border: 2px solid #1F1F1F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.subnav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 52%;
+}
+
