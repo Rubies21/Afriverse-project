@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wholeContainer{
+    width: 100%;
+}
+
+input[type=radio] {
+    background-color: yellow;
+    cursor: pointer;
+}
