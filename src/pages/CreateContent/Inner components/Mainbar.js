@@ -1,6 +1,5 @@
 import Mainbarmodule from './Mainbar.module.css'
 import angleRight from '../../../assets/angle-right.svg'
-import Nav from '../../../components/Nav'
 import ReactQuill from 'react-quill';
 import "react-quill/dist/quill.snow.css"
 import { useState, useRef } from "react"

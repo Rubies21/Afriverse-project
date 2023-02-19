@@ -1,6 +1,5 @@
 import React from 'react'
 import Asidemodule from './Inner components/Asidebar.module.css'
-import Mainbar from "./Inner components/Mainbar"
 import Nav from "../../components/Nav"
 import { Outlet } from "react-router-dom"
 import Footer from '../../components/Footer'
@@ -17,8 +16,6 @@ const CreateContent = () => {
 
         <ul className={Asidemodule.options}>
             <li><input type="radio" value="courselanding" name="landing" data-toggle-value="landing" style={{backgroundColor:'yellow'}}/>Course Landing</li>
-
-            {/* <div data-toggle-group="landing"><Mainbar/></div> */}
 
             <li><input type="radio" value="coursestructure" name="structure" />Course Structure</li>
 

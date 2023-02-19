@@ -1,0 +1,23 @@
+.container{
+    width: 70%;
+}
+
+.navigation{
+    display: flex;
+}
+
+.navigation li{
+    list-style: none;
+    padding: 50px 16px 16px 0px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    font-family: 'Monument Extended', 
+    sans-serif;
+    font-weight: 400;
+}
