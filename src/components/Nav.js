@@ -3,16 +3,23 @@ import Navbar from './Nav.module.css'
 import wallet from '../assets/wallet.svg'
 import { NavLink } from "react-router-dom";
 import grid from '../assets/grid.svg'
+import {FaTimes} from 'react-icons/fa'
+import {FaBars} from 'react-icons/fa'
+import { useRef } from 'react';
 
-const Nav = (props) => {   
+const Nav = (props) => { 
+  const navRef = useRef();
+  const showNavBar =()=>{
+    navRef.current.classList.toggle(`${Navbar.responsiveNav}`)
+  }
   let activeStyle = {
     fontWeight: '700',
   }; 
   return (
-    <nav>
+    <div className={Navbar.mainNav}>
         <div className={Navbar.container} style={{backgroundColor:`${props.col}`, backgroundImage: `url(${grid})`, backgroundPosition:'center'}}>
             <img src={Logo} alt='The Afriverse logo'/>
-
+            <nav ref = {navRef}>
             <div className={Navbar.subnav}>
                 <ul>
                     <li>
@@ -32,13 +39,19 @@ const Nav = (props) => {
                     </li>
                 </ul>
             
-
                 <button style={{backgroundColor:`${props.col}`}}>
                   <img src={wallet} size ='44px' style={{padding:'5px 10px 5px 10px'}}/>
                  <span style={{paddingRight:'20px'}}> Wallet address modal</span></button>
-            </div>
+                </div>
+                  <FaTimes className={`btn-close ${Navbar.navBtn}` } onClick={showNavBar}/>
+
+                  </nav>               
+                <FaBars className={Navbar.navBtn} onClick={showNavBar} />            
+            
+             
+            
         </div>
-    </nav>
+    </div>
   )
 }
 
