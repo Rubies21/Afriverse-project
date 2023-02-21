@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Mainbar from './pages/CreateContent/Inner components/Mainbar';
 import CourseStructure from './pages/CreateContent/Course Structure/CourseStructure';
 
-
 const App = () => {
   return (
     <Router>
@@ -18,6 +17,7 @@ const App = () => {
           </Route>
           <Route path="/course-structure" element={<CourseStructure/>}/>
           <Route path = "/live" element={<LiveStream/>} />
+
       </Routes>
     </Router>
   )

@@ -1,0 +1,140 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 96px 20px 96px;
+    border-bottom: 1px solid black;
+} 
+.container ul{
+    display: flex;
+}
+
+.container li{
+    list-style: none;
+    padding-left: 20px;
+}
+.container a{
+    text-decoration: none;
+    color: black;
+}
+
+.currentLink{
+    font-weight:700;
+}
+.container .profile{
+    width: 40%;
+    background: #EAF7FA;
+    border: 2px solid #1F1F1F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navBtn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border:none;
+    outline: none;
+    visibility: hidden;
+    opacity:0;
+    position:relative;
+}
+
+.subnav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 52%;
+  
+} 
+
+/*==========================
+Sidebar navigation
+========================*/
+@media(max-width: 768px){
+    .container{
+        padding-right: 0px;
+    }
+
+.navbar {
+    position: relative;
+  }
+  button {
+    cursor: pointer;
+    background: transparent;;
+    border: none;
+    font-size: 20px;
+  }
+  .navbar .toggle {
+    position: fixed;
+    left: 30px;
+    top: 40px;
+    cursor: pointer;
+    background: transparent;;
+    border: none;
+  }
+  .menu-nav {
+    list-style: none;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    width: 0;
+    max-width: 290px;
+    z-index: 9;
+    font-size: 18px;
+    box-shadow: 0 10px 15px -3px rgb(46 41 51 / 8%), 0 4px 6px -2px rgb(71 63 79 / 16%);
+    transform: translateX(-500px);
+    transition: transform ease-in-out 0.2s;
+    /* transition: width ease 0.2s; */
+  }
+  .menu-nav.show-menu {
+    width: 100%;
+    transform: translateX(60px);
+    transform: translateY(120px);
+  }
+  .menu-nav li a, .menu-nav li span {
+    display: block;
+    padding: 1rem;
+  }
+  .container .profile{
+    width: 80%;
+  }
+  .container ul{
+    display: block;
+  }
+}
+
+@media(max-width: 414px){
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    .container .profile{
+        /* display: none; */
+        background: transparent;
+        border: none;
+    }
+
+    .subnav{
+        align-items: center;
+    }
+
+    .toggle{
+        transform: translateY(0%);
+    }
+    .span-text{
+      display: none;
+    }
+    .wallet{
+      transform: translateX(20px);
+    }
+
+
+}
+  

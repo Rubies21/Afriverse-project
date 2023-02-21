@@ -1,27 +1,27 @@
 import Logo from '.././assets/AfriLogo.svg'
-import Navbar from './Nav.module.css'
+import "./Nav.css"
 import wallet from '../assets/wallet.svg'
 import { NavLink } from "react-router-dom";
 import grid from '../assets/grid.svg'
-import {FaTimes} from 'react-icons/fa'
-import {FaBars} from 'react-icons/fa'
-import { useRef } from 'react';
+import { useState } from 'react';
+import { FaBars } from 'react-icons/fa';
+import {GrClose} from 'react-icons/gr'
 
-const Nav = (props) => { 
-  const navRef = useRef();
-  const showNavBar =()=>{
-    navRef.current.classList.toggle(`${Navbar.responsiveNav}`)
-  }
+const Nav = (props) => {
+  const [navbarOpen, setNavbarOpen] = useState(false);
   let activeStyle = {
     fontWeight: '700',
   }; 
   return (
-    <div className={Navbar.mainNav}>
-        <div className={Navbar.container} style={{backgroundColor:`${props.col}`, backgroundImage: `url(${grid})`, backgroundPosition:'center'}}>
+    <nav className='navbar'>
+        <div className="container" style={{backgroundColor:`${props.col}`, backgroundImage: `url(${grid})`, backgroundPosition:'center'}}>
+
+          <button className="toggle" onClick={() => setNavbarOpen((prev) => !prev)}>{navbarOpen ? <GrClose/> : <FaBars/>} </button>
             <img src={Logo} alt='The Afriverse logo'/>
-            <nav ref = {navRef}>
-            <div className={Navbar.subnav}>
-                <ul>
+
+
+            <div className="subnav">
+                <ul className={`menu-nav${navbarOpen ? ' show-menu' : ''}`}>
                     <li>
                         <NavLink to="/" style={({ isActive }) =>
                         isActive ? activeStyle : undefined
@@ -39,19 +39,17 @@ const Nav = (props) => {
                     </li>
                 </ul>
             
-                <button style={{backgroundColor:`${props.col}`}}>
-                  <img src={wallet} size ='44px' style={{padding:'5px 10px 5px 10px'}}/>
-                 <span style={{paddingRight:'20px'}}> Wallet address modal</span></button>
-                </div>
-                  <FaTimes className={`btn-close ${Navbar.navBtn}` } onClick={showNavBar}/>
 
-                  </nav>               
-                <FaBars className={Navbar.navBtn} onClick={showNavBar} />            
-            
-             
+                <button style={{backgroundColor:`${props.col}`}} className="profile">
+                  <img src={wallet} size ='44px' style={{padding:'5px 10px 5px 10px'}} className="wallet"/>
+                 <span style={{paddingRight:'20px'}} className="span-text"> Wallet address modal</span></button>
+            </div>
+
+
+          
             
         </div>
-    </div>
+    </nav>
   )
 }
 
