@@ -4,8 +4,8 @@ import { useState } from 'react'
 
 const Footer = (props) => {
 
-  return (
-    <footer>
+  return ( 
+    <footer> 
         <div className={Footermodule.subFooter}>
             <p style={{fontSize: '14px'}}>% COMPLETED</p>
             <p style={{fontSize: '26px', color:'rgba(31, 31, 31, 0.67)', paddingTop:'10px'}}>{props.progress}</p>

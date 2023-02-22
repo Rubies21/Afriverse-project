@@ -1,3 +1,8 @@
+.container{
+    padding: 87px 30px 0px 96px;
+    width: 24%;
+}
+
 .container p{
     font-weight: 700;
     line-height: 27px;
@@ -14,7 +19,12 @@
     list-style: none;
     line-height: 26px;
 }
+
+@media(max-width: 768px){
 .container{
-    padding: 87px 30px 0px 96px;
-    width: 24%;
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid black;
+    padding-bottom: 20px;
+}
 }

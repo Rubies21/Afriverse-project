@@ -17,7 +17,7 @@ const Nav = (props) => {
         <div className="container" style={{backgroundColor:`${props.col}`, backgroundImage: `url(${grid})`, backgroundPosition:'center'}}>
 
           <button className="toggle" onClick={() => setNavbarOpen((prev) => !prev)}>{navbarOpen ? <GrClose/> : <FaBars/>} </button>
-            <img src={Logo} alt='The Afriverse logo'/>
+            <img src={Logo} alt='The Afriverse logo' className="logo"/>
 
 
             <div className="subnav">

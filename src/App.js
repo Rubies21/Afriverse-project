@@ -1,4 +1,4 @@
-import Index from './index.module.css'
+import './index.css'
 import Explore from './pages/Explore/Explore'
 import CreateContent from "./pages/CreateContent/CreateContent";
 import LiveStream from './pages/LiveStream/LiveStream';

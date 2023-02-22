@@ -1,16 +1,15 @@
 import Nav from '../../components/Nav'
 import Aside from '../../components/Aside'
 import Main from '../../components/Main'
-import Exploremodule from './Explore.module.css'
 import Footer from '../../components/Footer'
-
+import "./Explore.css"
 
 
 const Explore = () => {
   return (
     <div>
       <Nav col='#EAF7FA'/>
-      <div className = {Exploremodule.container}>
+      <div className = "Expcontainer">
         <Aside/>
         <Main/>
         

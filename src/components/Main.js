@@ -26,7 +26,7 @@ const ReadMore = ({ children }) => {
 const Main = () => {
   return (
     <main>
-        <ul className={Mainmodule.navigation}>
+        <ul className={Mainmodule.navigation}> 
             <li><a href="#" style={{color: 'rgba(31, 31, 31, 0.47)'}}>List of Courses</a></li>
             <li><img src={angleRight}/></li>
             <li><a href="#">NFTs</a></li>
@@ -55,7 +55,7 @@ Tokens aka NFT? This course contains all you. Lorem ipsum dot dot dor otnelf erf
                 <img src={Clock} style={{paddingRight:'10px'}}/>
                 <span style={{paddingRight:'20px'}}>15hrs</span>
                 <img src={stars} style={{paddingRight:'5px'}}/>
-                <span>(12 learners) </span>
+                <span className={Mainmodule.learners}>(12 learners) </span>
             </div>
             <button className={Mainmodule.claim}>Claim 20 AFET</button>
         </div>

@@ -72,3 +72,26 @@ main{
     background: #B1D0FE;
     border: 2px solid #1F1F1F;
 }
+
+@media(max-width: 768px){
+    main{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media(max-width: 414px){
+    .rating{
+        display: block;
+    }
+
+    .title{
+        font-size: 32px;
+    }
+    .claim{
+        margin-top: 20px;
+    }
+    .learners{
+        display: none;
+    }
+}

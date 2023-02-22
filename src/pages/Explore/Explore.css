@@ -1,0 +1,12 @@
+.Expcontainer{
+    display: flex;
+}
+
+
+@media(max-width: 768px){
+    .Expcontainer{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+}

@@ -25,3 +25,41 @@ footer{
     font-weight: 500;
     font-size: 22px;
 }
+
+@media(max-width: 768px){
+
+    .back{
+        padding:21px 40px;
+    }
+    .action{
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+}
+
+@media(max-width: 414px){
+    footer{
+        display: block;
+        padding: 0;
+        padding-top: 30px;
+        
+    }
+
+    .subFooter{
+        padding-left: 48px;
+    }
+
+    .buttons{
+        width: 75%;
+        margin: auto;
+    }
+
+    .back{
+        font-size: 18px;
+    }
+
+    .action{
+        font-size: 18px;
+    }
+}

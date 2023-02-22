@@ -29,7 +29,7 @@ const CreateContent = () => {
         </div>
         <Outlet/>
         </div>
-        <Footer progress='10%' buttonName='Save Progress' />
+        <Footer progress='10%' buttonName='Save Progress' /> 
         
     </div>
     
