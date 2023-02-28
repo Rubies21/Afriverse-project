@@ -11,18 +11,59 @@
     padding-bottom: 14px;
 }
 
-.options li{
+/* .options li{
     padding: 12px 0px ;
-    
-}
+     
+} */
 
 .options{
-    display: grid;
+    display: block;
     list-style: none;
-    line-height: 24px;
-    padding-bottom: 24px;
 }
 
+.btn{
+    border: none;
+    outline: none;
+    padding: 15px 0px;
+    margin-bottom: 5px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+.btnActive{
+    background: #FDF2F3;
+    color: #E44E62;
+    border-color: #E44E62;
+
+}
+
+.circle{
+    margin-right: 5px;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.btn > li{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.circle > svg{
+    font-size: 20px;
+}
 input[type=radio]{
     margin: 0px 10px 0px 10px;
+}
+@media(max-width: 768px){
+    .container{
+        padding-left: 0px;
+        width: 40%;
+    }
 }

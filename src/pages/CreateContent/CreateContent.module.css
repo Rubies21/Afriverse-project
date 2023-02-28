@@ -1,6 +1,7 @@
 .container{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .wholeContainer{
@@ -8,6 +9,13 @@
 }
 
 input[type=radio] {
-    background-color: yellow;
     cursor: pointer;
+}
+
+
+@media(max-width: 768px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }
 }

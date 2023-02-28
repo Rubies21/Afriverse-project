@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/monument-extended');
 
 .container{
-    width: 70%;
+    width: 70%; 
 }
 
 .navigation{
@@ -137,4 +137,10 @@ input[type=text]{
     right: 0px;
     bottom: 0px;
     left: 0px;
+  }
+
+  @media(max-width: 768px){
+    .container{
+        /* padding-left: 150px; */
+    }
   }

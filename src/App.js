@@ -12,10 +12,11 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Explore/>}/>
           
-          <Route path = "/create" element={<CreateContent/>} >
+          <Route element={<CreateContent/>} >
             <Route path = "/create/" element={<Mainbar/>} />
-          </Route>
           <Route path="/course-structure" element={<CourseStructure/>}/>
+          
+          </Route>
           <Route path = "/live" element={<LiveStream/>} />
 
       </Routes>
