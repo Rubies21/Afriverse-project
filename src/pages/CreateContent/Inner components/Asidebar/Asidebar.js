@@ -15,7 +15,7 @@ const btnLinks = [
     },
     {
       title: "Course Video Upload",
-      url: "/video-upload"
+      url: "/course-upload"
     }
   ]
 const Asidebar = () => {
@@ -47,6 +47,8 @@ const Asidebar = () => {
           </ul>
 
           <h1 className={Asidemodule.header}>PUBLISH YOUR COURSE</h1>
+          
+          
           <input type="radio" value="review" name="review" />Review
 
         </div>

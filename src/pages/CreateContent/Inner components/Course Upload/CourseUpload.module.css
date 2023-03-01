@@ -1,0 +1,79 @@
+.container{
+    width: 60%;
+}
+.navigation{
+    display: flex;
+}
+.navigation li{   
+    list-style: none;
+    padding: 50px 16px 16px 0px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    font-family: 'Monument Extended', 'sans-serif';
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.subHeader{
+    font-family: 'Monument Extended', 'sans-serif';
+    font-weight: 400;
+    font-size: 16px;    
+    margin-top: 15px;
+    padding: 18px 26px 18px 26px ;
+    background: #FAFAFA;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.videoUpload{
+    margin-top: 32px;
+    padding-bottom: 59px;
+    width: 100%;
+}
+
+.video{
+    width: 45%;
+}
+
+.box{
+    height: 206px;
+    background: #FFFFFF;
+    border: 1px solid #1F1F1F;
+    box-shadow: 1.5px 1.5px 0;
+}
+.content{
+    transform: translateY(20%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.line1{
+    display: flex;
+    justify-content: center;
+}
+
+.line2{
+    text-align: center;
+    color: rgba(31, 31, 31, 0.87);
+}
+
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fundamentals{
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 42px;
+}
