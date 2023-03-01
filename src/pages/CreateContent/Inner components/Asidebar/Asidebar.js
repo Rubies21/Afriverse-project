@@ -1,6 +1,6 @@
 import React from 'react'
 import Asidemodule from './Asidebar.module.css'
-import { Outlet, useNavigate, useLocation } from "react-router-dom"
+import {useNavigate, useLocation } from "react-router-dom"
 import {AiOutlineCheckCircle} from "react-icons/ai"
 import {BsCircle} from "react-icons/bs"
 

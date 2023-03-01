@@ -1,13 +1,13 @@
 import CourseModule from "./CourseStructure.module.css"
-import angleRight from "../../../assets/angle-right.svg"
-import Footer from "../../../components/Footer"
+import angleRight from "../../../../assets/angle-right.svg"
+// import Footer from "../../../../components/Footer"
  import {MdModeEdit} from "react-icons/md"
  import {RiDeleteBin6Line} from "react-icons/ri"
  import {GrFormAdd} from "react-icons/gr"
 
 const CourseStructure = () => {
     const Edit = () =>{
-
+ 
     }
   return (
     <div className={CourseModule.wholeContainer}>
@@ -42,7 +42,7 @@ const CourseStructure = () => {
         <button className={CourseModule.addSection}>Add Section</button>
         </div>
         
-        <Footer progress='37%' buttonName='Save Progress' />
+        {/* <Footer progress='37%' buttonName='Save Progress' /> */}
     </div>
   )
 }

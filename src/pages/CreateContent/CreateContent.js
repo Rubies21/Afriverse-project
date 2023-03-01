@@ -1,9 +1,9 @@
 import React from 'react'
 import Nav from "../../components/Nav"
-import { Outlet, useNavigate, useLocation } from "react-router-dom"
+import { Outlet} from "react-router-dom"
 import Footer from '../../components/Footer'
 import CreateModule from "./CreateContent.module.css"
-import Asidebar from './Inner components/Asidebar'
+import Asidebar from './Inner components/Asidebar/Asidebar'
 
 const CreateContent = () => {
 

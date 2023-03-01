@@ -1,14 +1,14 @@
-import Mainbarmodule from './Mainbar.module.css'
-import angleRight from '../../../assets/angle-right.svg'
+import Mainbarmodule from './CourseLanding.module.css'
+import angleRight from '../../../../assets/angle-right.svg'
 import ReactQuill from 'react-quill';
 import "react-quill/dist/quill.snow.css"
 import { useState, useRef } from "react"
-const Mainbar = () => {
+
+const CourseLanding = () => {
     const [value, setValue] = useState("");
     const [dragActive, setDragActive] = useState(false);
     const inputRef = useRef(null);
 
-    // handle drag events
     const handleDrag = function(e) {
       e.preventDefault();
       e.stopPropagation();
@@ -19,27 +19,18 @@ const Mainbar = () => {
       }
     };
 
-    // triggers when the file is dropped
     const handleDrop = function(e) {
         e.preventDefault();
         e.stopPropagation();
         setDragActive(false);
-        if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-          // at least one file has been dropped so do something
-          // handleFiles(e.dataTransfer.files);
-        }
-      };
 
-      // triggers when file is selected with click
+        };
         const handleChange = function(e) {
             e.preventDefault();
             if (e.target.files && e.target.files[0]) {
-            // at least one file has been selected so do something
-            // handleFiles(e.target.files);
             }
         };
 
-        // triggers the input when the button is clicked
         const onButtonClick = () => {
             inputRef.current.click();
         };
@@ -105,8 +96,6 @@ const Mainbar = () => {
                     Cover Image
                 </label>
 
-                {/* <input type="file" className={Mainbarmodule.inputFileUpload} ref={inputRef} multiple={true} onChange={handleChange}/> */}
-
                 <label id={Mainbarmodule.labelFileUpload} className={Mainbarmodule.dragActive ? "drag-active" : "" }>
 
                     <div className={Mainbarmodule.dropImage}>
@@ -122,4 +111,4 @@ const Mainbar = () => {
   )
 }
 
-export default Mainbar
+export default CourseLanding

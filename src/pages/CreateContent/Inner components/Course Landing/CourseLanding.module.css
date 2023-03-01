@@ -82,11 +82,12 @@ input[type=text]{
     padding:20px;
     padding-right: 70px;
     appearance: none;
-    background-image: url('../../../assets/dropDown.svg');
+    background-image: url('../../../../assets/dropDown.svg');
     background-repeat: no-repeat;
     background-position: calc(100% - 15px) center;
     background-size: 10px;
     box-shadow: 1.5px 1.5px 0;
+    cursor: pointer;
     
 }
 
@@ -141,6 +142,5 @@ input[type=text]{
 
   @media(max-width: 768px){
     .container{
-        /* padding-left: 150px; */
     }
   }
