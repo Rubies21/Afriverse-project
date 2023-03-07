@@ -1,11 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { useState } from 'react'
 import Mainmodule from './Main.module.css'
-import angleRight from '../assets/angle-right.svg'
+import angleRight from '../../../assets/angle-right.svg'
 import {FaCaretRight} from "react-icons/fa"
-import Clock from '../assets/clock.svg'
-import stars from '../assets/stars.svg'
+import Clock from '../../../assets/clock.svg'
+import stars from '../../../assets/stars.svg'
+import { useNavigate } from 'react-router-dom'
 
 const ReadMore = ({ children }) => {
     const text = children;
@@ -24,12 +24,13 @@ const ReadMore = ({ children }) => {
   };
 
 const Main = () => {
+  const navigate = useNavigate();
   return (
     <main>
         <ul className={Mainmodule.navigation}> 
-            <li><a href="#" style={{color: 'rgba(31, 31, 31, 0.47)'}}>List of Courses</a></li>
+            <li><button className={Mainmodule.btn} onClick = {()=>(navigate("courses"))} style={{color: 'rgba(31, 31, 31, 0.47)'}}>List of Courses</button></li>
             <li><img src={angleRight}/></li>
-            <li><a href="#">NFTs</a></li>
+            <li><button className={Mainmodule.btn} onClick = {()=>(navigate("/"))}>NFTs</button></li>
         </ul>
 
       <p className={Mainmodule.title}> Beginner's Guide to NFT</p>
@@ -38,7 +39,7 @@ const Main = () => {
         <div className={Mainmodule.subrectangle}>
             <div className={Mainmodule.icon}>
                 
-                <FaCaretRight color='white' size ="40px"  style={{padding: '5px', backgroundColor:'grey', borderRadius:'50%', position:'absolute', left:'45%', translate:'0% 300%'}}/>
+                <FaCaretRight color='white' size ="40px"  style={{padding: '5px', backgroundColor:'grey', borderRadius:'50%', position:'absolute', left:'50%', translate:'0% 300%'}}/>
             </div>
             
         </div>

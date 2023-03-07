@@ -4,10 +4,12 @@ import angleRight from "../../../../assets/angle-right.svg"
  import {MdModeEdit} from "react-icons/md"
  import {RiDeleteBin6Line} from "react-icons/ri"
  import {GrFormAdd} from "react-icons/gr"
+ import { useState } from "react"
 
 const CourseStructure = () => {
+  const [text, setText] = useState("");
     const Edit = () =>{
- 
+      
     }
   return (
     <div className={CourseModule.wholeContainer}>
@@ -34,7 +36,7 @@ const CourseStructure = () => {
             <h1>Fundamentals of NFT - Part 1</h1>
             <p className={CourseModule.paragraphOne}>Lecture 1. Introduction to course <MdModeEdit/><RiDeleteBin6Line/></p>
             <p className={CourseModule.paragraphOne}>Lecture 2. Introduction to course</p>
-            <p className={CourseModule.paragraphOne}>Lecture 3. Introduction to course<MdModeEdit/><RiDeleteBin6Line/></p>
+            <p className={CourseModule.paragraphOne}>Lecture 3. Introduction to course<MdModeEdit onClick={Edit}/><RiDeleteBin6Line/></p>
             
             <p className={CourseModule.addition}><GrFormAdd/>Add Lecture</p>
            </div>

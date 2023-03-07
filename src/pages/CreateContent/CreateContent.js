@@ -13,7 +13,7 @@ const CreateContent = () => {
       <Nav col='#FCE9EB' />
       <div className={CreateModule.container}>
         <Asidebar/>
-        <Outlet />
+        <Outlet /> 
       </div>
       <Footer progress='10%' buttonName='Save Progress' />
 

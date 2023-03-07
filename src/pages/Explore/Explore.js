@@ -1,8 +1,8 @@
 import Nav from '../../components/Nav'
 import Aside from '../../components/Aside'
-import Main from '../../components/Main'
 import Footer from '../../components/Footer'
 import "./Explore.css"
+import { Outlet } from 'react-router-dom'
 
 
 const Explore = () => {
@@ -11,7 +11,7 @@ const Explore = () => {
       <Nav col='#EAF7FA'/>
       <div className = "Expcontainer">
         <Aside/>
-        <Main/>
+        <Outlet/>
         
       </div>
       <Footer progress='Not Completed' buttonName = 'Start Course' status = 'none'/>

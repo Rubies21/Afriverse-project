@@ -14,6 +14,7 @@ main{
 
 .navigation{
     display: flex;
+    align-items: center;
 }
 
 .navigation a{
@@ -41,14 +42,12 @@ main{
     margin: auto;
 }
 
-
 .about{
     font-size: 25.958px;
     padding-bottom: 17px;
     padding-top: 40px;
     font-family: 'Monument Extended', sans-serif;
-    font-weight: normal;
-    
+    font-weight: normal;  
 }
 .readtext{
     color:blue;
@@ -72,7 +71,13 @@ main{
     background: #B1D0FE;
     border: 2px solid #1F1F1F;
 }
-
+.btn{
+    outline:none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
 @media(max-width: 768px){
     main{
         width: 80%;

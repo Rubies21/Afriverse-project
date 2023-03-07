@@ -8,7 +8,7 @@ const btnLinks = [
     {
       title: "Course Landing",
       url: "/create"
-    },
+    }, 
     {
       title: "Course Structure",
       url: "/course-structure"

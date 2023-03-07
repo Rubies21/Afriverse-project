@@ -48,22 +48,22 @@ const BrowseUpload = () => {
   return (
     <div>
         <div className={CourseUploadMod.box}>
-                        <div className={CourseUploadMod.content}>
-                        <form id="form-file-upload" onDragEnter={handleDrag} onSubmit={(e) => e.preventDefault()}>
-                        <input ref={inputRef} type="file" id={CourseUploadMod.inputFile} multiple={true} onChange={handleChange} style={{visibility:'hidden'}}/>
-                        <label id={CourseUploadMod.labelFile} className={dragActive ? "drag-active" : "" }>
-                            <span className={CourseUploadMod.line1}><RiFolderUploadFill color=' rgba(31, 31, 31, 0.67)' size={30} /></span> <br/>
-                            <p className={CourseUploadMod.line2}>Drag and drop a video, or <a href="#" className={CourseUploadMod.uploadLink} onClick={LinkClick} style={{textDecoration:'none', color:'#2664DD'}}>Browse</a></p>
-                            <p className={CourseUploadMod.line2}>Max 500MB(.mp4, .flv)</p>
+          <div className={CourseUploadMod.content}>
+            <form id="form-file-upload" onDragEnter={handleDrag} onSubmit={(e) => e.preventDefault()}>
+              <input ref={inputRef} type="file" id={CourseUploadMod.inputFile} multiple={true} onChange={handleChange} style={{visibility:'hidden'}}/>
+              <label id={CourseUploadMod.labelFile} className={dragActive ? "drag-active" : "" }>
+                <span className={CourseUploadMod.line1}><RiFolderUploadFill color=' rgba(31, 31, 31, 0.67)' size={30} /></span> <br/>
+                <p className={CourseUploadMod.line2}>Drag and drop a video, or <a href="#" className={CourseUploadMod.uploadLink} onClick={LinkClick} style={{textDecoration:'none', color:'#2664DD'}}>Browse</a></p>
+                <p className={CourseUploadMod.line2}>Max 500MB(.mp4, .flv)</p>
 
-                            
-                            </label>
-                        { dragActive && <div id="drag-file-element" onDragEnter={handleDrag} onDragLeave={handleDrag} onDragOver={handleDrag} onDrop={handleDrop}></div> }
-                        </form>
-                            
-                        </div>
+              
+              </label>
+            { dragActive && <div id="drag-file-element" onDragEnter={handleDrag} onDragLeave={handleDrag} onDragOver={handleDrag} onDrop={handleDrop}></div> }
+            </form>
+                
+            </div>
                         
-                    </div>
+          </div>
     </div>
   )
 }
