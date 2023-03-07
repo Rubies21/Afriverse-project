@@ -1,5 +1,5 @@
 import Nav from '../../components/Nav'
-import Aside from '../../components/Aside'
+import Aside from './Inner components/Aside'
 import Footer from '../../components/Footer'
 import "./Explore.css"
 import { Outlet } from 'react-router-dom'

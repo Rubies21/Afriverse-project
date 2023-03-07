@@ -39,7 +39,7 @@ const Asidebar = () => {
 
             {btnLinks.map((btn, index) => (
               <button onClick={() => {
-                navigate(btn.url);
+                navigate(btn.url); 
               }} className={`${Asidemodule.btn} ${(location.pathname === btn.url || index <= activeIndex) ? Asidemodule.btnActive : ''}`}><li><span className={Asidemodule.circle}>
                 {(location.pathname === btn.url || index <= activeIndex) ? <AiOutlineCheckCircle /> : <BsCircle/>}
                 </span><span>{btn.title}</span></li></button>
