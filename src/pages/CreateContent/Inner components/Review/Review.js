@@ -89,11 +89,20 @@ const Review = () => {
             </li>
               ))
             }
-            
-            
-
     
         </ul>
+
+        <div className={Reviewmodule.section}>
+        <span className={Reviewmodule.titlet}> <AiOutlineCaretDown />
+          <p>Make your first NFT</p> </span>
+          <span className={Reviewmodule.icons}>
+            <span className={Reviewmodule.icon}><SlSocialYoutube size={25}/> 6 lectures</span>  
+
+            <span className={Reviewmodule.icon}>
+              <HiOutlineClock size={25}/> 3hrs 25 mins
+            </span>
+         </span> 
+        </div>
     </div>
   )
 }
