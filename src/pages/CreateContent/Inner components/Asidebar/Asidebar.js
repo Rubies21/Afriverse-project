@@ -49,7 +49,11 @@ const Asidebar = () => {
           <h1 className={Asidemodule.header}>PUBLISH YOUR COURSE</h1>
           
           
-          <input type="radio" value="review" name="review" />Review
+          <button onClick={() => {
+                navigate("/review"); 
+              }} className={`${Asidemodule.btn} ${(location.pathname === "/review") ? Asidemodule.btnActive : ''}`}><li><span className={Asidemodule.circle}>
+                {(location.pathname === "review") ? <AiOutlineCheckCircle /> : <BsCircle/>}
+                </span><span>Review</span></li></button>
 
         </div>
   )

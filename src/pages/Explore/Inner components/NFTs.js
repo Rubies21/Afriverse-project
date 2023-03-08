@@ -36,7 +36,7 @@ const NFTs = () => {
        <span ><SlSocialYoutube size={25}/> 2 lectures </span> 
        <span><HiOutlineClock size={25}/> 15:24 mins</span> 
       </div>
-      
+       
 
     </div>
 

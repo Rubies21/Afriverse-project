@@ -8,6 +8,7 @@ import CourseStructure from './pages/CreateContent/Inner components/Course Struc
 import CourseUpload from './pages/CreateContent/Inner components/Course Upload/CourseUpload';
 import Main from './pages/Explore/Inner components/Main'
 import NFTs from './pages/Explore/Inner components/NFTs';
+import Review from './pages/CreateContent/Inner components/Review/Review';
 const App = () => {
   return (
     <Router>
@@ -20,6 +21,8 @@ const App = () => {
           <Route path = "/create/" element={<CourseLanding/>} />
           <Route path="/course-structure" element={<CourseStructure/>}/>
           <Route path="/course-upload" element={<CourseUpload/>}/>
+          <Route path="/review" element={<Review/>}/>
+
         </Route>
         <Route path = "/live" element={<LiveStream/>} />
 
