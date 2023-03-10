@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 96px 20px 96px;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
 } 
 .container ul{ 
     display: flex;
