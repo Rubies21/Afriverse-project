@@ -14,9 +14,11 @@
 .options{
     display: block;
     list-style: none;
+    
 }
 
 .btn{
+    font-size: 20px;
     border: none;
     outline: none;
     padding: 15px 0px;

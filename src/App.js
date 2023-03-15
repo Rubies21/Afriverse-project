@@ -9,6 +9,10 @@ import CourseUpload from './pages/CreateContent/Inner components/Course Upload/C
 import Main from './pages/Explore/Inner components/Main'
 import NFTs from './pages/Explore/Inner components/NFTs';
 import Review from './pages/CreateContent/Inner components/Review/Review';
+import "./fonts/GTWalsheimPro/stylesheet.css";
+import "./fonts/PPMonumentExtended/stylesheet.css";
+import WalletModal from './components/WalletModal';
+
 const App = () => {
   return (
     <Router>
@@ -25,6 +29,7 @@ const App = () => {
 
         </Route>
         <Route path = "/live" element={<LiveStream/>} />
+        <Route path = "/modal" element={<WalletModal/>} />
 
       </Routes>
     </Router>

@@ -5,10 +5,13 @@
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^36.0.0",
     "@ckeditor/ckeditor5-react": "^5.0.6",
+    "@coinbase/wallet-sdk": "^3.6.4",
+    "@rainbow-me/rainbowkit": "^0.12.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0", 
+    "@testing-library/user-event": "^13.5.0",
     "ckeditor-react-component": "^0.1.6",
+    "ethers": "^5.7.2",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
@@ -18,7 +21,9 @@
     "react-router-dom": "^6.7.0",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",
-    "web-vitals": "^2.1.4"
+    "wagmi": "^0.12.1",
+    "web-vitals": "^2.1.4",
+    "web3modal": "^1.9.12"
   },
   "scripts": {
     "start": "react-scripts start",

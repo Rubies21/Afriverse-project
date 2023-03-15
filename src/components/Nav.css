@@ -4,6 +4,7 @@
     align-items: center;
     padding: 20px 96px 20px 96px;
     border-bottom: 3px solid black;
+    font-family: "GT Walsheim Pro";
 } 
 .container ul{ 
     display: flex;
@@ -14,6 +15,7 @@
     list-style: none;
     padding-left: 10px;
     padding-right: 15px;
+    font-size: 20px;
 }
 .container a{
     text-decoration: none;
@@ -27,6 +29,7 @@
     width: 25%;
     background: #EAF7FA;
     border: 2px solid #1F1F1F;
+    border-bottom: 3px solid #1f1f1f;
     display: flex;
     align-items: center;
     justify-content: space-between;

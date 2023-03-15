@@ -16,12 +16,13 @@
 .navigation li a {
     text-decoration: none;
     color: black;
+    font-size: 24px;
 }
 
 .container h1{
-    font-family: 'Monument Extended', 
-    sans-serif;
+    font-family: "PP Monument Extended";
     font-weight: 400;
+    font-size: 28px;
 }
 
 form{
@@ -40,7 +41,7 @@ input[type=text]{
 
 .container .Label{
     margin-top: 40px;
-    font-family: 'Monument Extended', sans-serif;
+    font-family: "PP Monument Extended";
     font-weight: 100;
     margin-bottom: 10px;
 }
@@ -88,6 +89,7 @@ input[type=text]{
     background-size: 10px;
     box-shadow: 1.5px 1.5px 0;
     cursor: pointer;
+    color: rgba(31, 31, 31, 0.67);
     
 }
 

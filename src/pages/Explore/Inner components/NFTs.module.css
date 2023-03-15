@@ -1,7 +1,6 @@
-@import url('https://fonts.cdnfonts.com/css/monument-extended');
 
 .title{
-    font-family: 'Monument Extended', sans-serif;
+    font-family: "PPMonumentExtended", sans-serif;
     font-size: 45px;
     padding-top: 25px;
 
@@ -53,7 +52,7 @@
     font-size: 25.958px;
     padding-bottom: 17px;
     padding-top: 40px;
-    font-family: 'Monument Extended', sans-serif;
+    font-family: "PP Monument Extended";
     font-weight: normal;  
 }
 .extraText span{

@@ -18,8 +18,7 @@
 }
 
 .header{
-    font-family: 'Monument Extended', 
-    sans-serif;
+    font-family: "PP Monument Extended";
     font-weight: 400;
 }
 
@@ -30,7 +29,7 @@
 }
 
 .sectionOne h1{
-    font-family: 'Monument Extended', sans-serif;
+    font-family: "PP Monument Extended";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

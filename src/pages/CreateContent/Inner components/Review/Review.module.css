@@ -17,10 +17,11 @@
 .navigation li{
     list-style: none;
     padding-right: 16px;
+    font-size: 24px;
 }
 
 .title{
-    font-family: 'Monument Extended', sans-serif;
+    font-family: "PP Monument Extended";
     font-size: 45px;
     padding-top: 25px;
 
@@ -42,7 +43,7 @@
     margin: auto;
 }
 .topic{
-    font-family: 'Monument Extended', sans-serif; 
+    font-family: "PP Monument Extended";
     font-weight: 400;
     font-size: 24px;
     padding-top: 32px;
@@ -61,7 +62,7 @@
     border-bottom: 1px solid rgba(31, 31, 31, 0.15);
 }
 .section .titlet p{
-    font-family: 'Monument Extended', sans-serif;
+    font-family: "PP Monument Extended";
     font-weight: 400;
     font-size: 18px;
     

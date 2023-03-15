@@ -3,7 +3,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #1E1E1E;
+    border-top:  1px solid rgba(31, 31, 31, 0.47);
+    font-family: "GT Walsheim Pro";
 }
 
 .buttons{
