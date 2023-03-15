@@ -1,13 +1,11 @@
 import Logo from '.././assets/AfriLogo.svg'
 import "./Nav.css"
-
 import wallet from '../assets/wallet.svg'
 import { NavLink } from "react-router-dom";
 import grid from '../assets/grid.svg'
 import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import {GrClose} from 'react-icons/gr';
-import { YourApp } from './WalletButton';
 import WalletModal from './WalletModal';
 
 const Nav = (props) => {
@@ -46,7 +44,7 @@ const Nav = (props) => {
                 {/* <button style={{backgroundColor:`${props.col}`}} className="profile">
                   <img src={wallet} size ='44px' style={{padding:'5px 10px 5px 10px'}} className="wallet"/>
                  <span style={{paddingRight:'20px'}} className="span-text"> Wallet address modal</span></button> */}
-                 <WalletModal/>
+                 <WalletModal />
                  
             </div>
 

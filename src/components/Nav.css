@@ -134,7 +134,9 @@ Sidebar navigation
     .wallet{
       transform: translateX(20px);
     }
-
+    .connectWallet{
+      background-color: yellow;
+    }
 
 }
   

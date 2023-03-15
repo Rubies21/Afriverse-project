@@ -29,7 +29,6 @@ const App = () => {
 
         </Route>
         <Route path = "/live" element={<LiveStream/>} />
-        <Route path = "/modal" element={<WalletModal/>} />
 
       </Routes>
     </Router>

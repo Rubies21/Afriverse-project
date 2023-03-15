@@ -1,7 +1,9 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+import "./Nav.css"
+
 
 const WalletButton = () => {
-  return <ConnectButton />;
+  return <ConnectButton/>;
 }; 
 
 export default WalletButton

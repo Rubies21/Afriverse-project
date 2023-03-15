@@ -2,6 +2,7 @@ import '@rainbow-me/rainbowkit/styles.css';
 import {
   getDefaultWallets,
   RainbowKitProvider,
+  darkTheme
 } from '@rainbow-me/rainbowkit';
 import { configureChains, createClient, WagmiConfig } from 'wagmi';
 import { mainnet, polygon, optimism, arbitrum } from 'wagmi/chains';
@@ -31,7 +32,11 @@ const wagmiClient = createClient({
 const WalletModal = () => {
   return (
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
+      <RainbowKitProvider chains={chains} theme={darkTheme({
+        accentColor: '#FFB700',
+        accentColorForeground: 'RGB(26, 17, 16)',
+        borderRadius: 'none',
+      })}>
         <WalletButton />
       </RainbowKitProvider>
     </WagmiConfig>
